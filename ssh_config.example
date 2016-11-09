@@ -1,0 +1,6 @@
+Host docker-chromium
+  User      docker
+  Port      55560
+  HostName  127.0.0.1
+  RemoteForward 64713 localhost:4713
+  ForwardX11 yes

@@ -1,0 +1,2 @@
+#!/bin/bash
+tmux new -s chromium -d "sshpass -p 'docker' ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no docker-chromium 'pulseaudio --start && export PULSE_SERVER=tcp:localhost:64713 && chromium-browser'"
